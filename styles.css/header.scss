@@ -1,0 +1,114 @@
+@import "_imports";
+/*header*/
+
+header {
+  height: 800px;
+  background: url(../images-sunny/header.jpeg) center/cover;
+  @include sm{
+    height: 100vh;
+    
+  }
+  @include md {
+    width: 110%;
+  }
+  .sunnyside-nav{
+    display: flex;
+    justify-content: space-between;
+    .sunnyside__container{
+      @include headerContainer;
+
+      .sunnyside__image{
+        width: 170px;
+        height: 33px;
+      }
+    }
+
+  .nav__container{
+   
+    @include headerContainer;
+    .burger{
+      display: none;
+      @include md{
+        display: block;
+        position: relative;
+        width:45px;
+        height: 45px;
+        border:none;
+        background: transparent;
+        cursor: pointer;
+      }
+      .bar{
+        @include md{
+        display: block;
+        width: 45px;
+        height: 4px;
+        border-radius: 3px;
+        background-color: white;
+
+        &::before, &::after {
+          content: "";
+          width: 45px;
+          height: 4px;
+          position: absolute;
+          left: 0;
+          background-color: white;
+          border-radius: 3px;
+        }
+
+        &::before{
+          transform: translateY(-12px);
+        }
+        &::after{
+          transform: translateY(12px);
+        }
+
+        }
+      }
+    }
+    
+    .nav__parent__list{
+      list-style: none;
+      display: flex;
+
+      .nav__list{
+      margin-right: 47px;
+
+        .nav__links{
+          width: 48px;
+          height: 25px;
+          color: $whiteColor;
+          text-decoration: none;
+          font-family: $fuente1;
+          font-weight: 600;
+          font-size: 18px;
+          letter-spacing: -0.128571px;
+          line-height: 25px;
+
+          &:active{
+            color: $whiteColor;
+            mix-blend-mode: normal;
+            opacity: 0.25;
+            @include navsLink;
+            
+          }
+
+            &:hover{
+              color:#24303E;
+              padding: 16px 30px 15px 32px;
+              @include navsLink;
+              transition: all 0.3s ease;
+            } 
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  
+}   
+
+

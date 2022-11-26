@@ -1,0 +1,135 @@
+@import "_settings";
+@import "_mixins";
+
+.block-text{
+  @include sm{
+    width: 110%;
+  }
+    .learn__grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+
+      @include sm {
+        height: 100vh;
+      }
+
+      @include md {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width: 100%;
+      }
+      @include lg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+        .column-right{
+          @include sm{
+          
+          height: 100vh;
+          }
+          @include lg{
+            
+          }
+          height: 600px;
+          background: url(../images-sunny/transform.jpeg)center/cover;
+        }
+  
+        .glass{
+          height: 600px;
+          background: url(../images-sunny/stand-out.jpeg)center/cover;
+        }
+  
+      .text{
+        @include sm {
+          
+        }
+        @include md{
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+        }
+        @include lg{
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 106.4px 0 165px;
+  
+        .learn__header{
+          @include md{
+            text-align: center;
+            margin-top: 10px;
+          }
+          @include lg{
+            text-align: center;
+          }
+          font-family: $fuente2;
+          font-size: 40px;
+          font-style: normal;
+          line-height: 49px;
+          letter-spacing: -0.285714px;
+          font-weight: 900;
+          color: $names;
+          text-align: center;
+          margin-bottom: 32px;
+          width: 445px;
+          height: 98px;
+          text-align: left;
+        }
+  
+        .learn__text{
+          @include md{
+            text-align: center;
+          }
+          font-family: $fuente1;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px;
+          font-size: 18px;
+          color: $learnTxt;
+          letter-spacing: -0.128571px;
+          width: 445px;
+          height: 90px;
+          margin-bottom: 40px;
+        }
+  
+        .learn__link{
+          @include md{
+            margin-bottom: 10px;
+          }
+          font-family: $fuente2;
+          font-weight: 900;
+          font-size: 15px;
+          line-height: 25px;
+          letter-spacing: 1px;
+          color:$names;
+          text-decoration: none;
+          
+        }
+        .learn__style-one{
+          @include linkStyle;
+        }
+        
+          .learn__style-two{
+            @include linkStyle;
+            
+          }
+      }
+    }
+
+    .learn__style-one:hover{
+      background-color: $learnOne;
+    }
+    .learn__style-two:hover{
+      background-color: $learnTwo;
+      
+    }
+}

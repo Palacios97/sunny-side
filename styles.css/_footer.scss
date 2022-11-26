@@ -1,0 +1,70 @@
+@import '_settings.scss';
+@import "_mixins";
+
+.footer__container{
+  background:rgba(144, 212, 198, 1);
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+ @include md{
+  width: 110%;
+ }
+  .footer__logo{
+    width: 170px;
+    height: 33px;
+  }
+
+  .footer__links__container{
+    margin-top: 40px;
+    .footer__links{
+      display: flex;
+      gap: 57px;
+      justify-content: space-between;
+      list-style: none;
+      font-family: $fuente1;
+      font-size: 18px;
+      font-weight: 600;
+      font-style: normal;
+      line-height: 25px;
+
+      .footer__link{
+        color: $footerNav;
+        text-decoration: none;
+        &:hover{
+          color: $whiteColor;
+          transition: all 0.3s ease;
+        }
+        &:active{
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+
+  .footer__list__media{
+    margin-top: 88px;
+    gap: 28px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    .media{
+      width: 20px;
+      height: 20px;
+    }
+    .bi{
+      color: $footerNav;
+      font-size: 20px;
+    }
+  }
+
+  .bi:hover{
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  
+}
+ 

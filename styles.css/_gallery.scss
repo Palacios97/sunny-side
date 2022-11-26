@@ -1,0 +1,38 @@
+@import "_settings";
+@import "_mixins";
+
+.gallery{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include md {
+    width:110%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  
+  }
+
+  .botellas{
+    background:url(../images-sunny/gallery-milkbottles.jpeg)center/cover;
+    height: 400px;
+    @include md {
+    
+    background-size: cover;
+    background-position: center;
+    }
+    }
+                              
+   .cono{
+    background: url(../images-sunny/gallery-cone.jpeg)center/cover;                     
+    }
+                              
+  .plato{
+    background:url(../images-sunny/gallery-orange.jpeg)center/cover;             
+  }
+                              
+  .azucar{
+    background:url(../images-sunny/gallery-sugarcubes.jpeg)center/cover;                   
+  }    
+  
+}

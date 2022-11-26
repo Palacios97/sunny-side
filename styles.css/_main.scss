@@ -1,0 +1,69 @@
+@import "_settings";
+@import "_mixins";
+
+.design__container{
+  @include md{
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .graphic__container{
+    @include lg{
+      background-position: center;
+      background-size:cover ;
+      background-repeat: no-repeat;
+    }
+    background: url(../images-sunny/graphic-design.jpeg);
+    height: 600px;
+    background-size: cover;
+    @include flexBox;
+   
+    .txt__element{
+      @include textElement;
+
+      .graphic__header{
+        color: $grapgicHeader;
+        @include desingHeaders;
+        margin-bottom: 27px;
+      }
+
+      .graphic__txt{
+        color: $graphicTxt;
+        @include desingText;
+      }
+    }
+  }
+
+  .photo__container{
+    @include lg{
+      background-position: center;
+      background-size:cover ;
+      background-repeat: no-repeat;
+    }
+    background:url(../images-sunny/photography.jpeg);
+    background-size: cover;
+    height: 600px;
+    @include flexBox;
+
+    .txt__element-two{
+      @include textElement;
+      .photo__header{
+        color: $photoHeader;
+        @include desingHeaders;
+        margin-bottom: 27px;
+      }
+      .photo__txt{
+        @include desingText;
+        color: $photoTxt;
+      }
+    }
+  }
+}
+
+
+
+
+
