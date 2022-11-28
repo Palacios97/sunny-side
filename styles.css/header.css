@@ -650,6 +650,9 @@ header .sunnyside-nav .sunnyside__container .sunnyside__image {
 header .sunnyside-nav .nav__container {
   margin: 40px 46px;
 }
+header .sunnyside-nav .nav__container .burger {
+  display: none;
+}
 header .sunnyside-nav .nav__parent__list {
   list-style: none;
   display: flex;

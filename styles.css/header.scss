@@ -26,8 +26,9 @@ header {
   .nav__container{
    
     @include headerContainer;
-    // .burger{
-    //   display: none;
+     .burger{
+     display: none;
+    }
     //   @include md{
     //     display: block;
     //     position: relative;
