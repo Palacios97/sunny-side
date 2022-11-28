@@ -26,44 +26,44 @@ header {
   .nav__container{
    
     @include headerContainer;
-    .burger{
-      display: none;
-      @include md{
-        display: block;
-        position: relative;
-        width:45px;
-        height: 45px;
-        border:none;
-        background: transparent;
-        cursor: pointer;
-      }
-      .bar{
-        @include md{
-        display: block;
-        width: 45px;
-        height: 4px;
-        border-radius: 3px;
-        background-color: white;
+    // .burger{
+    //   display: none;
+    //   @include md{
+    //     display: block;
+    //     position: relative;
+    //     width:45px;
+    //     height: 45px;
+    //     border:none;
+    //     background: transparent;
+    //     cursor: pointer;
+    //   }
+      // .bar{
+        // @include md{
+        // display: block;
+        // width: 45px;
+        // height: 4px;
+        // border-radius: 3px;
+        // background-color: white;
 
-        &::before, &::after {
-          content: "";
-          width: 45px;
-          height: 4px;
-          position: absolute;
-          left: 0;
-          background-color: white;
-          border-radius: 3px;
-        }
+        // &::before, &::after {
+        //   content: "";
+        //   width: 45px;
+        //   height: 4px;
+        //   position: absolute;
+        //   left: 0;
+        //   background-color: white;
+        //   border-radius: 3px;
+        // }
 
-        &::before{
-          transform: translateY(-12px);
-        }
-        &::after{
-          transform: translateY(12px);
-        }
+        // &::before{
+        //   transform: translateY(-12px);
+        // }
+        // &::after{
+        //   transform: translateY(12px);
+        // }
 
-        }
-      }
+        // }
+      //   }
     }
     
     .nav__parent__list{
@@ -93,13 +93,11 @@ header {
           }
 
             &:hover{
-              color:#24303E;
-              padding: 16px 30px 15px 32px;
-              @include navsLink;
-              transition: all 0.3s ease;
-            } 
-
-          }
+            color:#24303E;
+            padding: 16px 30px 15px 32px;
+            @include navsLink;
+            transition: all 0.3s ease;
+          } 
 
         }
 
@@ -108,7 +106,7 @@ header {
     }
 
   }
-  
-}   
+
+}  
 
 

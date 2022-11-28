@@ -650,52 +650,14 @@ header .sunnyside-nav .sunnyside__container .sunnyside__image {
 header .sunnyside-nav .nav__container {
   margin: 40px 46px;
 }
-header .sunnyside-nav .nav__container .burger {
-  display: none;
-}
-@media only screen and (max-width: 720px) {
-  header .sunnyside-nav .nav__container .burger {
-    display: block;
-    position: relative;
-    width: 45px;
-    height: 45px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
-}
-@media only screen and (max-width: 720px) {
-  header .sunnyside-nav .nav__container .burger .bar {
-    display: block;
-    width: 45px;
-    height: 4px;
-    border-radius: 3px;
-    background-color: white;
-  }
-  header .sunnyside-nav .nav__container .burger .bar::before, header .sunnyside-nav .nav__container .burger .bar::after {
-    content: "";
-    width: 45px;
-    height: 4px;
-    position: absolute;
-    left: 0;
-    background-color: white;
-    border-radius: 3px;
-  }
-  header .sunnyside-nav .nav__container .burger .bar::before {
-    transform: translateY(-12px);
-  }
-  header .sunnyside-nav .nav__container .burger .bar::after {
-    transform: translateY(12px);
-  }
-}
-header .sunnyside-nav .nav__container .nav__parent__list {
+header .sunnyside-nav .nav__parent__list {
   list-style: none;
   display: flex;
 }
-header .sunnyside-nav .nav__container .nav__parent__list .nav__list {
+header .sunnyside-nav .nav__parent__list .nav__list {
   margin-right: 47px;
 }
-header .sunnyside-nav .nav__container .nav__parent__list .nav__list .nav__links {
+header .sunnyside-nav .nav__parent__list .nav__list .nav__links {
   width: 48px;
   height: 25px;
   color: white;
@@ -706,7 +668,7 @@ header .sunnyside-nav .nav__container .nav__parent__list .nav__list .nav__links 
   letter-spacing: -0.128571px;
   line-height: 25px;
 }
-header .sunnyside-nav .nav__container .nav__parent__list .nav__list .nav__links:active {
+header .sunnyside-nav .nav__parent__list .nav__list .nav__links:active {
   color: white;
   mix-blend-mode: normal;
   opacity: 0.25;
@@ -719,7 +681,7 @@ header .sunnyside-nav .nav__container .nav__parent__list .nav__list .nav__links:
   border-radius: 28px;
   background-color: white;
 }
-header .sunnyside-nav .nav__container .nav__parent__list .nav__list .nav__links:hover {
+header .sunnyside-nav .nav__parent__list .nav__list .nav__links:hover {
   color: #24303E;
   padding: 16px 30px 15px 32px;
   font-family: "fraunces";
